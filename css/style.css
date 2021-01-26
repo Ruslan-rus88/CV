@@ -60,7 +60,7 @@ body{
     text-align: justify;
 }
 
-.education-img{
+.albaath-img{
     border-radius: 50%;
     -webkit-animation: spin 3s linear infinite;
     -moz-animation: spin 3s linear infinite;
@@ -85,19 +85,20 @@ body{
     background-color: #fff;
     margin-top: 25px;
     padding: 20px;
-    height: calc(100% - 25px);
+    /* height: calc(100% - 25px); */
     display: flex;
     flex-direction: column;
     vertical-align: middle;
 }
 
-.experience-block p {
+.experience-details-block p {
     text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
     .about-text{
         position: relative;
+        display: block;
     }
 
     .about-img{
@@ -127,6 +128,12 @@ body{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .education-img{
+        width: 60% !important;
+    }
+}
+
 .expImgContainer{
     margin-top: 25px;
 }
@@ -149,6 +156,6 @@ body{
     color: #fff;
 }
 
-.experience-block ul {
+.experience-details-block {
     display: none;
 }

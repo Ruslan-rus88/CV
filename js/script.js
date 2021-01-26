@@ -173,17 +173,17 @@ petroleumCourses.forEach(course => {
 // --------display experience projects
 let downArrow = document.querySelectorAll('.fa-angle-down');
 let upArrow = document.querySelectorAll('.fa-angle-up');
-let expProjects = document.querySelectorAll('.experience-block ul');
+let expProjectsDetails = document.querySelectorAll('.experience-details-block');
 
-for(let i=0; i<expProjects.length; i++) {
+for(let i=0; i<expProjectsDetails.length; i++) {
     downArrow[i].onclick = function(){
         downArrow[i].style.display = 'none';
         upArrow[i].style.display = '';
-        expProjects[i].style.display = 'block';
+        expProjectsDetails[i].style.display = 'block';
     }
     upArrow[i].onclick = function(){
         downArrow[i].style.display = '';
         upArrow[i].style.display = 'none';
-        expProjects[i].style.display = 'none';
+        expProjectsDetails[i].style.display = 'none';
     }
 }
