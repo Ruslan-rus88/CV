@@ -5,11 +5,8 @@ body{
 
 .navbar{
     background-color: #045033 !important;
-    /* background-color: #015450 !important; */
 }
 
-.navbar .container {
-}
 
 #navbarSupportedContent {
     justify-content: flex-end;
@@ -62,27 +59,28 @@ body{
 
 .albaath-img{
     border-radius: 50%;
-    -webkit-animation: spin 3s linear infinite;
-    -moz-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
+    -webkit-animation: pulse 3s linear infinite;
+    -moz-animation: pulse 3s linear infinite;
+    animation: pulse 3s linear infinite;
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes pulse {
     0%{-webkit-transform: scale(1);}
     50%{-webkit-transform: scale(1.05);}
 }
-@-moz-keyframes spin {
+@-moz-keyframes pulse {
     0%{-webkit-transform: scale(1);}
     50%{-webkit-transform: scale(1.05);}
 }
-@keyframes spin {
+@keyframes pulse {
     0%{-webkit-transform: scale(1);}
     50%{-webkit-transform: scale(1.05);}
 }
 
 .experience-block {
-    color: #045033;
-    background-color: #fff;
+    /* color: #045033; */
+    /* background-color: #fff; */
+    color: #fff;
     margin-top: 25px;
     padding: 20px;
     /* height: calc(100% - 25px); */
@@ -99,10 +97,14 @@ body{
     .about-text{
         position: relative;
         display: block;
+        background-color: #fff;
+        margin-top: 0;
+        color: #202428;
     }
 
     .about-img{
         opacity: 1;
+        padding: 0;
     }
 
     .education-img{
@@ -135,7 +137,7 @@ body{
 }
 
 .expImgContainer{
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 .expTxtContainer{
@@ -143,7 +145,7 @@ body{
 }
 
 .fas {
-    border: 1px solid #045033;
+    border: 1px solid #fff;
     padding: 5px;
     border-radius: 5px;
     margin-left: 10px;
@@ -152,8 +154,8 @@ body{
 }
 
 .fas:hover{
-    background-color: #045033;
-    color: #fff;
+    background-color: #fff;
+    color: #045033;
 }
 
 .experience-details-block {
