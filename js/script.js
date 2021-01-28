@@ -187,6 +187,50 @@ for(let i = 0; i < expProjectsDetails.length; i++) {
         expProjectsDetails[i].style.display = 'none';
     }
 }
+//--------------Projects
+class project {
+    constructor(img, name, backInfo, href) {
+        this.img = img,
+        this.name = name,
+        this.backInfo = backInfo,
+        this.href = href
+    }
+} 
+
+let allProjects = []
+let storeProject = new project('online-store', 'Online Store', 'Visit Website', '')
+allProjects.push(storeProject)
+let ticTacToeProject = new project('tictactoe', 'Tic Tac Toe', 'Play with a friend :)', 'https://ruslan-rus88.github.io/TicTacToe/')
+allProjects.push(ticTacToeProject)
+//add new projects here
+let soonRroject1 = new project('coming-soon', '', 'Visit Website', '')
+allProjects.push(soonRroject1)
+let soonRroject2 = new project('coming-soon', '', 'Visit Website', '')
+allProjects.push(soonRroject2)
+let soonRroject3 = new project('coming-soon', '', 'Visit Website', '')
+allProjects.push(soonRroject3)
+let soonRroject4 = new project('coming-soon', '', 'Visit Website', '')
+allProjects.push(soonRroject4)
+
+//add new projects here----END
+let allProjectsContainer = document.querySelector('#all-projects-container')
+allProjects.forEach(element => {
+    allProjectsContainer.innerHTML += `
+    <div class="flip-card col-md-4 col-sm-12 my-3">
+        <div class="flip-card-inner">
+            <div class="flip-card-front w-100">
+                <img src="assets/images/${element.img}.jpg" class="project-img w-100" alt="${element.name}">
+                <div class="project-name textContainer text-center">${element.name}</div>
+            </div>
+            <div class="flip-card-back">
+                <a href="${element.href}" class="project-btn" target="_blank">
+                    <i class="fas fa-globe"> ${element.backInfo}</i>
+                </a>
+            </div>
+        </div>   
+    </div>
+    `
+})
 
 //--------------Set height for Flip cards for correct align
 let flipCards = document.querySelectorAll('.flip-card')
