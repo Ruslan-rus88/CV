@@ -1,4 +1,4 @@
-// align text at center
+// --------------align text at center-----------------
 let imgContainers = document.querySelectorAll('.row .imgContainer img')
 let textContainer = document.querySelectorAll('.row .textContainer')
 
@@ -9,8 +9,8 @@ function alignText(){
     }    
 }
 
-window.onload =() => { alignText() }
-window.onresize = () => { alignText() };
+window.onload =() => { alignText(); myFunc() }
+window.onresize = () => { alignText(); myFunc() };
 
 // ------------change active navbar button--------------
 let navBtns = document.querySelectorAll('.nav-link')
@@ -175,7 +175,7 @@ let downArrow = document.querySelectorAll('.fa-angle-down');
 let upArrow = document.querySelectorAll('.fa-angle-up');
 let expProjectsDetails = document.querySelectorAll('.experience-details-block');
 
-for(let i=0; i<expProjectsDetails.length; i++) {
+for(let i = 0; i < expProjectsDetails.length; i++) {
     downArrow[i].onclick = function(){
         downArrow[i].style.display = 'none';
         upArrow[i].style.display = '';
@@ -186,4 +186,15 @@ for(let i=0; i<expProjectsDetails.length; i++) {
         upArrow[i].style.display = 'none';
         expProjectsDetails[i].style.display = 'none';
     }
+}
+
+//--------------Set height for Flip cards for correct align
+let flipCards = document.querySelectorAll('.flip-card')
+let projectImages = document.querySelectorAll('.project-img')
+
+function myFunc(){
+    for (let i=0; i<flipCards.length; i++) {
+        let imgHeight = projectImages[i].height;
+        flipCards[i].style.height = imgHeight + 'px';
+    }    
 }
