@@ -130,11 +130,17 @@ body{
 
 .experience-details span i{
     -moz-animation: detailsAnimation 2s infinite;
+    -o-animation: detailsAnimation 2s infinite;
     -webkit-animation: detailsAnimation 2s infinite;
     animation: detailsAnimation 2s infinite;
 }
 
 @-moz-keyframes detailsAnimation{
+    0% {box-shadow: none;}
+    50% {box-shadow: 0 0 10px #fff;
+    }
+}
+@-o-keyframes detailsAnimation{
     0% {box-shadow: none;}
     50% {box-shadow: 0 0 10px #fff;}
 }
@@ -148,6 +154,10 @@ body{
 }
 
 @-moz-keyframes displayExp{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-o-keyframes displayExp{
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
@@ -225,6 +235,9 @@ body{
 
 /* ------------Skills---------*/
 @-moz-keyframes skillsAnimation {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.6);}
+}@-o-keyframes skillsAnimation {
     0% {transform: scale(1);}
     50% {transform: scale(0.6);}
 }
