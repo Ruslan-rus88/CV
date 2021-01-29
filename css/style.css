@@ -55,6 +55,9 @@ body{
     -moz-animation: pulse 3s linear infinite;
     animation: pulse 3s linear infinite;
 } */
+.experience-slideshow{
+    display: none;
+}
 
 .experience-block {
     color: #fff;
@@ -87,16 +90,17 @@ body{
         margin: 0 auto;
     }
 
+    .experience-slideshow{
+        display: block;
+    }
+
     .expImgContainer{
         padding: 0;
-        opacity: 0.3;
         position: absolute;
         display: none;
     }
     .expTxtContainer{
         padding: 0;
-        /* margin-top: 40px; */
-        background-image: url(/assets/images/filanovskogo.jpg);
         background-size: cover;
     }
 
