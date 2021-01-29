@@ -48,26 +48,13 @@ body{
     padding: 10px;
     text-align: justify;
 }
-
+/* 
 .albaath-img{
     border-radius: 50%;
     -webkit-animation: pulse 3s linear infinite;
     -moz-animation: pulse 3s linear infinite;
     animation: pulse 3s linear infinite;
-}
-
-@-webkit-keyframes pulse {
-    0%{-webkit-transform: scale(1);}
-    50%{-webkit-transform: scale(1.05);}
-}
-@-moz-keyframes pulse {
-    0%{-webkit-transform: scale(1);}
-    50%{-webkit-transform: scale(1.05);}
-}
-@keyframes pulse {
-    0%{-webkit-transform: scale(1);}
-    50%{-webkit-transform: scale(1.05);}
-}
+} */
 
 .experience-block {
     color: #fff;
@@ -143,6 +130,28 @@ body{
     display: none;
 }
 
+.experience-details span i{
+    animation: detailsAnimation 2s infinite;
+}
+
+@keyframes detailsAnimation{
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 10px #fff;
+    }
+}
+
+@keyframes displayExp{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .flip-card {
     perspective: 1000px; 
@@ -204,4 +213,19 @@ body{
     font-weight: bold;
     text-decoration: none;
     color: #fff !important;
+}
+
+/* ------------Skills---------*/
+@keyframes skillsAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.6);
+    }
+}
+
+/* ------------Map---------*/
+#map:focus {
+    outline: none;
 }
