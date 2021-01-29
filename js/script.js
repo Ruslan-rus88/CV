@@ -180,6 +180,7 @@ for(let i = 0; i < expProjectsDetails.length; i++) {
         downArrow[i].style.display = 'none';
         upArrow[i].style.display = '';
         expProjectsDetails[i].style.display = 'block';
+        expProjectsDetails[i].style.animation = 'displayExp 1s';
     }
     upArrow[i].onclick = function(){
         downArrow[i].style.display = '';
@@ -202,6 +203,7 @@ let storeProject = new project('online-store', 'Online Store', 'Visit Website', 
 allProjects.push(storeProject)
 let ticTacToeProject = new project('tictactoe', 'Tic Tac Toe', 'Play with a friend :)', 'https://ruslan-rus88.github.io/TicTacToe/')
 allProjects.push(ticTacToeProject)
+
 //add new projects here
 let soonRroject1 = new project('coming-soon', '', 'Visit Website', '')
 allProjects.push(soonRroject1)
@@ -211,8 +213,8 @@ let soonRroject3 = new project('coming-soon', '', 'Visit Website', '')
 allProjects.push(soonRroject3)
 let soonRroject4 = new project('coming-soon', '', 'Visit Website', '')
 allProjects.push(soonRroject4)
-
 //add new projects here----END
+
 let allProjectsContainer = document.querySelector('#all-projects-container')
 allProjects.forEach(element => {
     allProjectsContainer.innerHTML += `
@@ -242,3 +244,42 @@ function myFunc(){
         flipCards[i].style.height = imgHeight + 'px';
     }    
 }
+
+//--------------animate skills
+let skills = document.querySelectorAll('.skills-container img')
+for(let i=0; i<skills.length; i++){
+    skills[i].style.animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
+}
+
+//--------------mapbox
+mapboxgl.accessToken = 'pk.eyJ1Ijoicmtob3Vzc2VpbiIsImEiOiJja2pyM2ZrdGMxcjRlMnRsOXd2bm9yN2Y4In0.iV6iViPZMIZfwLixKRtAYw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [30.5234, 50.4501], 
+    zoom: 9
+});
+    // Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
+marker = new mapboxgl.Marker({
+    draggable: false,
+    color: "red",
+})
+    .setLngLat([30.5234, 50.4001])
+    .addTo(map);
+
+    var geolocate = new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        trackUserLocation: false
+    });
+
+map.addControl(geolocate)
+
+geolocate.on('geolocate', function(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+})
