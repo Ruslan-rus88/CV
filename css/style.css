@@ -48,13 +48,7 @@ body{
     padding: 10px;
     text-align: justify;
 }
-/* 
-.albaath-img{
-    border-radius: 50%;
-    -webkit-animation: pulse 3s linear infinite;
-    -moz-animation: pulse 3s linear infinite;
-    animation: pulse 3s linear infinite;
-} */
+
 .experience-slideshow{
     display: none;
 }
@@ -135,25 +129,35 @@ body{
 }
 
 .experience-details span i{
+    -moz-animation: detailsAnimation 2s infinite;
+    -webkit-animation: detailsAnimation 2s infinite;
     animation: detailsAnimation 2s infinite;
 }
 
+@-moz-keyframes detailsAnimation{
+    0% {box-shadow: none;}
+    50% {box-shadow: 0 0 10px #fff;}
+}
+@-webkit-keyframes detailsAnimation{
+    0% {box-shadow: none;}
+    50% {box-shadow: 0 0 10px #fff;}
+}
 @keyframes detailsAnimation{
-    0% {
-        box-shadow: none;
-    }
-    50% {
-        box-shadow: 0 0 10px #fff;
-    }
+    0% {box-shadow: none;}
+    50% {box-shadow: 0 0 10px #fff;}
 }
 
+@-moz-keyframes displayExp{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes displayExp{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 @keyframes displayExp{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 
@@ -220,13 +224,17 @@ body{
 }
 
 /* ------------Skills---------*/
+@-moz-keyframes skillsAnimation {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.6);}
+}
+@-webkit-keyframes skillsAnimation {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.6);}
+}
 @keyframes skillsAnimation {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.6);
-    }
+    0% {transform: scale(1);}
+    50% {transform: scale(0.6);}
 }
 
 /* ------------Map---------*/
