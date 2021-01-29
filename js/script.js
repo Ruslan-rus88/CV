@@ -199,7 +199,7 @@ class project {
 } 
 
 let allProjects = []
-let storeProject = new project('online-store', 'Online Store', 'Visit Website', '')
+let storeProject = new project('online-store', 'Online Store', 'Visit Website', 'https://ruslan-rus88.github.io/online-store/')
 allProjects.push(storeProject)
 let ticTacToeProject = new project('tictactoe', 'Tic Tac Toe', 'Play with a friend :)', 'https://ruslan-rus88.github.io/TicTacToe/')
 allProjects.push(ticTacToeProject)
