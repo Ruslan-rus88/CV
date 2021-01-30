@@ -253,7 +253,9 @@ function myFunc(){
 //--------------animate skills
 let skills = document.querySelectorAll('.skills-container img')
 for(let i=0; i<skills.length; i++){
-    
+    skills[i].style.height = skills[i].style.width;
+    skills[i].setAttribute('style', 'animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-moz-animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-o-animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-webkit-animation: skillsAnimation 3s infinite ' + i/6 +'s;')
+
     // skills[i].style.animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
     // skills[i].style.-moz-animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
     // skills[i].style.-webkit-animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
