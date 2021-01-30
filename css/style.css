@@ -237,21 +237,6 @@ body{
 }
 
 /* ------------Skills---------*/
-@-moz-keyframes skillsAnimation {
-    0% {transform: scale(1);}
-    50% {transform: scale(0.6);}
-}@-o-keyframes skillsAnimation {
-    0% {transform: scale(1);}
-    50% {transform: scale(0.6);}
-}
-@-webkit-keyframes skillsAnimation {
-    0% {transform: scale(1);}
-    50% {transform: scale(0.6);}
-}
-@keyframes skillsAnimation {
-    0% {transform: scale(1);}
-    50% {transform: scale(0.6);}
-}
 
 /* ------------Map---------*/
 #map:focus {
