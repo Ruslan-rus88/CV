@@ -126,6 +126,27 @@ body{
 
 .experience-details-block {
     display: none;
+    -moz-animation: displayExp 1s;
+    -o-animation: displayExp 1s;
+    -webkit-animation: displayExp 1s;
+    animation: displayExp 1s;
+}
+
+@-moz-keyframes displayExp{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-o-keyframes displayExp{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes displayExp{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes displayExp{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .experience-details span i{
@@ -152,24 +173,6 @@ body{
     0% {box-shadow: none;}
     50% {box-shadow: 0 0 10px #fff;}
 }
-
-@-moz-keyframes displayExp{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@-o-keyframes displayExp{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@-webkit-keyframes displayExp{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@keyframes displayExp{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 
 .flip-card {
     perspective: 1000px; 
