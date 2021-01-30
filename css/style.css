@@ -237,9 +237,14 @@ body{
 }
 
 /* ------------Skills---------*/
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .skills-container img{
-    width: 100%;
-    padding: 25% 0;
+        width: 15%;
+    /* padding: 25% 0; */
     border-radius: 50%;
 }
 
