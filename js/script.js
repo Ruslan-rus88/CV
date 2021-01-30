@@ -9,8 +9,8 @@ function alignText(){
     }    
 }
 
-window.onload =() => { alignText(); myFunc() }
-window.onresize = () => { alignText(); myFunc() };
+window.onload =() => { alignText(); myFunc();  skillsHeight () }
+window.onresize = () => { alignText(); myFunc();  skillsHeight () };
 
 // ------------change active navbar button--------------
 let navBtns = document.querySelectorAll('.nav-link')
@@ -256,12 +256,22 @@ for(let i=0; i<skills.length; i++){
     skills[i].setAttribute('style', 'animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-moz-animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-o-animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-webkit-animation: skillsAnimation 3s infinite ' + i/6 +'s;')
     // let skillsWidth = skills[i].clientWidth;
     // skills[i].clientHeight = skillsWidth;
-    console.log(skills[i].clientWidth);
-    console.log(skills[i].clientHeight);
+    // console.log(skills[i].clientWidth);
+    // console.log(skills[i].clientHeight);
 
     // skills[i].style.animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
     // skills[i].style.-moz-animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
     // skills[i].style.-webkit-animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
+}
+function skillsHeight (){
+    let skills = document.querySelectorAll('.skills-container img')
+
+    for (let i=0; i<skills.length; i++) {
+        let imgHeight = skills[i].width;
+        skills[i].style.height = imgHeight + 'px';
+        console.log(skills[i].style.height);
+        console.log(imgHeight);
+    }
 }
 
 //--------------mapbox
