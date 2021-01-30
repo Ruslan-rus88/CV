@@ -242,12 +242,12 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
+.skills-container div{
+    width: 15%;
+}
 .skills-container img{
-        width: 15%;
-        padding: 25% 0;
-
-    /* padding: 25% 0; */
     border-radius: 50%;
+    width: 100%;
 }
 
 @-moz-keyframes skillsAnimation {
