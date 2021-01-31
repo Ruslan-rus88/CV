@@ -266,7 +266,45 @@ body{
     50% {transform: scale(0.6);}
 }
 
-/* ------------Map---------*/
-#map:focus {
-    outline: none;
+.contacts-container {
+    color: #063b27;
+}
+
+.contacts-container a {
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+.contacts-container a:hover {
+    color: #fff;
+    background-color: #045033;
+}
+
+
+/* ----------footer------- */
+.footer-container {
+    background-color: #063b27;
+    color: #fff;
+}
+
+.footer-container .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.footer-container .container i {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.footer-container .container i:hover {
+    background-color: #fff;
+    color: #063b27;
+    border-radius: 5px;
 }
