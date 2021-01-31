@@ -13,38 +13,33 @@ window.onload =() => { alignText(); myFunc();  skillsHeight () }
 window.onresize = () => { alignText(); myFunc();  skillsHeight () };
 
 // ------------change active navbar button--------------
-let navBtns = document.querySelectorAll('.nav-link')
-navBtns.forEach((item) => {
-    item.addEventListener('click', () =>{
-        var activeBtn = document.querySelector('.active');
-        activeBtn.classList.remove('active');
-        item.classList.add('active');
+let navLinks = document.querySelectorAll('.nav-link')
+navLinks.forEach((link) => {
+    link.addEventListener('click', () =>{
+        var activeLink = document.querySelector('.active');
+        activeLink.classList.remove('active');
+        link.classList.add('active');
     });
 })
 
 var navSections = document.querySelectorAll('.nav-section')
-const sectionObserverOptions = {
-    threshold: 1,
-    rootMargin: '100px 0px 0px 0px'
-};
 
-const sectionObserver = new IntersectionObserver((entries, sectionObserver) => {
-    entries.forEach(entry => {
-        
-        for( let btn of navBtns) {
-            if( ('#' + entry.target.id) == btn.getAttribute('href') ) {
-                var activeBtn = document.querySelector('.active');
-                activeBtn.classList.remove('active');
-
-                btn.classList.add('active');
-            }
-        }
-    })
-}, sectionObserverOptions)
-
-navSections.forEach(section => {
-    sectionObserver.observe(section);
-})
+window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+  
+    navLinks.forEach(link => {
+      let section = document.querySelector(link.hash);
+  
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
 
 //-------------------Adding petroleum courses
 
