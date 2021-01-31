@@ -198,8 +198,7 @@ body{
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
-  
-  
+
 .flip-card-back {
     position: absolute;
     height: 100%;
@@ -253,7 +252,8 @@ body{
 @-moz-keyframes skillsAnimation {
     0% {transform: scale(1);}
     50% {transform: scale(0.6);}
-}@-o-keyframes skillsAnimation {
+}
+@-o-keyframes skillsAnimation {
     0% {transform: scale(1);}
     50% {transform: scale(0.6);}
 }
