@@ -180,11 +180,6 @@ for(let i = 0; i < expProjectsDetails.length; i++) {
         downArrow[i].style.display = 'none';
         upArrow[i].style.display = '';
         expProjectsDetails[i].style.display = 'block';
-        // expProjectsDetails[i].setAttribute('style', '-moz-animation: displayExp 1s; -o-animation: displayExp 1s;-webkit-animation: displayExp 1s; animation: displayExp 1s;')
-        // expProjectsDetails[i].setAttribute('style', 'animation: displayExp 1s;')
-        // expProjectsDetails[i].style.animation = 'displayExp 1s';
-        // expProjectsDetails[i].style.-moz-animation = 'displayExp 1s';
-        // expProjectsDetails[i].style.-webkit-animation = 'displayExp 1s';
     }
     upArrow[i].onclick = function(){
         downArrow[i].style.display = '';
@@ -254,14 +249,6 @@ function myFunc(){
 let skills = document.querySelectorAll('.skills-container img')
 for(let i=0; i<skills.length; i++){
     skills[i].setAttribute('style', 'animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-moz-animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-o-animation: skillsAnimation 3s infinite ' + i/6 +'s;' + '-webkit-animation: skillsAnimation 3s infinite ' + i/6 +'s;')
-    // let skillsWidth = skills[i].clientWidth;
-    // skills[i].clientHeight = skillsWidth;
-    // console.log(skills[i].clientWidth);
-    // console.log(skills[i].clientHeight);
-
-    // skills[i].style.animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
-    // skills[i].style.-moz-animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
-    // skills[i].style.-webkit-animation = 'skillsAnimation 3s infinite ' + i/6 +'s'
 }
 function skillsHeight (){
     let skills = document.querySelectorAll('.skills-container img')
@@ -269,8 +256,6 @@ function skillsHeight (){
     for (let i=0; i<skills.length; i++) {
         let imgHeight = skills[i].width;
         skills[i].style.height = imgHeight + 'px';
-        console.log(skills[i].style.height);
-        console.log(imgHeight);
     }
 }
 
