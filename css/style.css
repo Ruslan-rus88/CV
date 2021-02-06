@@ -104,6 +104,18 @@ body{
     }
 }
 
+.transformImg {
+    transition: 0.5s;
+}
+
+.transformImg:hover {
+    transform: scale(1.2);
+}
+
+.imgContainer {
+    overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
     .education-img{
         width: 60% !important;
