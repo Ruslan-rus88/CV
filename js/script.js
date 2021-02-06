@@ -12,6 +12,24 @@ function alignText(){
 window.onload =() => { alignText(); myFunc();  skillsHeight () }
 window.onresize = () => { alignText(); myFunc();  skillsHeight () };
 
+//-------------onscroll move home image-----------------
+window.onscroll =() => { scrollFunction() }
+function scrollFunction() {
+    let pageBody = document.querySelector('body')
+    if(pageBody.clientWidth>751) {
+        let homeImg = document.querySelector('.transformImg')  
+        if(pageYOffset>100) {
+            let offset = pageYOffset - 100;
+            if(pageYOffset>300) {
+                offset = 200;
+            }
+            homeImg.style.transform = "translateY("+offset+"px)"
+        } else {
+            homeImg.style.transform = "translateY(0px)"
+        }    
+    }
+}
+
 // ------------change active navbar button--------------
 let navLinks = document.querySelectorAll('.nav-link')
 navLinks.forEach((link) => {
