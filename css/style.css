@@ -105,12 +105,12 @@ body{
 }
 
 .transformImg {
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
-.transformImg:hover {
+/* .transformImg:hover {
     transform: scale(1.2);
-}
+} */
 
 .imgContainer {
     overflow: hidden;
