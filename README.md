@@ -1,2 +1,10 @@
 # Ruslan.Khoussein's CV
-updated 31.01.2021
+Demonstrate some of my skills in creating web pages.
+Show my background, experience and trainings.
+
+# Built With:
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
