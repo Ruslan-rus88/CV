@@ -56,7 +56,7 @@ class Course {
 let petroleumCourses =[];
 
 const adn = new Course(
-    'April 2019 - April 2019',
+    'April 2019',
     'Measurements ADN-ECO',
     'Siberian Training Center, Tyumen, Russian Federation',
     'Nuclear measurements, operations and applications of nuclear tools, handling radioactive (Gamma and Neutron) sources.',
@@ -65,7 +65,7 @@ const adn = new Course(
 petroleumCourses.push(adn);
 
 const emp = new Course(
-    'March 2019 - March 2019',
+    'March 2019',
     'EMP Resistivity',
     'Siberian Training Center, Tyumen, Russian Federation',
     'Operations and applications of electromagnetic propagation (EMP) tools, logs interpretation.',
@@ -92,7 +92,7 @@ const measurements0 = new Course(
 petroleumCourses.push(measurements0);
 
 const iwcf = new Course(
-    'September 2017 - September 2017',
+    'September 2017',
     'IWCF Level 1',
     'International Well Control Forum',
     'An Overview of Oil and Gas, Life Cycle of a Well, Drilling Rigs, Well Control During Drilling Operations, Well Intervention and Workover, Pressure Control During Well Intervention.',
@@ -101,7 +101,7 @@ const iwcf = new Course(
 petroleumCourses.push(iwcf);
 
 const da1 = new Course(
-    'August 2016 - August 2016',
+    'August 2016',
     'Data Analyst - 1',
     'Middle East Learning Center, Abu Dhabi, UAE',
     'Hydraulics, Mudlogging unit inspection list, Formation pressure, Overpressure (DExponent), Well monitoring, Site specific communication, well control, Drilling calculations, String buoyancy, Reporting, Leak of test, GNx explorer, Torque and drag model, Dual mast management, ML cabin startup.',
@@ -110,7 +110,7 @@ const da1 = new Course(
 petroleumCourses.push(da1);
 
 const gasFundamentals = new Course(
-    'February 2016 - February 2016',
+    'February 2016',
     'Gas Fundamentals and Analysis',
     'European Learning Center (ELC), Melun, France',
     'Different gas types, Gas extractors and their properties, Monitor gas on the rig.',
@@ -119,7 +119,7 @@ const gasFundamentals = new Course(
 petroleumCourses.push(gasFundamentals);
 
 const gssSensors = new Course(
-    'February 2016 - February 2016',
+    'February 2016',
     'GSS Sensors Calibration Validation Verification',
     'European Learning Center (ELC), Melun, France',
     'Different GSS sensors calibration verification and validation.',
@@ -128,7 +128,7 @@ const gssSensors = new Course(
 petroleumCourses.push(gssSensors);
 
 const gn4 = new Course(
-    'October 2014 - October 2014',
+    'October 2014',
     'GSS-Acquisition System (GNX)',
     'Sugar Land Learning Center (SLC), Sugar Land, USA',
     'New acquisition system, InterAct, Wits, Business Management, Sensors Installations and Calibrations, Hardware and Software, Gas System Calibration.',
@@ -137,7 +137,7 @@ const gn4 = new Course(
 petroleumCourses.push(gn4);
 
 const ml1 = new Course(
-    'August 2014 - August 2014',
+    'August 2014',
     'Mud Logging - 1',
     'European Learning Center (ELC), Melun, France',
     'Mud Logger\'s Tasks and Responsibilities, Drilling Equipment and Techniques, Lag Time, Pressure Notions, Mud Logging Geology, Mudlog, Drilling Fluids, Hydrocarbon and Gas Detection, Drilling Parameters, Sensors, Unit Maintenance, H2S Awareness and Detection, Safety, Quality Control, Client Relations.',
