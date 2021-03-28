@@ -12,24 +12,6 @@ function alignText(){
 window.onload =() => { alignText(); myFunc();  skillsHeight () }
 window.onresize = () => { alignText(); myFunc();  skillsHeight () };
 
-//-------------onscroll move home image-----------------
-window.onscroll =() => { scrollFunction() }
-function scrollFunction() {
-    let pageBody = document.querySelector('body')
-    if(pageBody.clientWidth>751) {
-        let homeImg = document.querySelector('.transformImg')  
-        if(pageYOffset>100) {
-            let offset = pageYOffset - 100;
-            if(pageYOffset>300) {
-                offset = 200;
-            }
-            homeImg.style.transform = "translateY("+offset+"px)"
-        } else {
-            homeImg.style.transform = "translateY(0px)"
-        }    
-    }
-}
-
 // ------------change active navbar button--------------
 let navLinks = document.querySelectorAll('.nav-link')
 navLinks.forEach((link) => {
@@ -216,6 +198,8 @@ let storeProject = new project('online-store', 'Online Store', 'Visit Website', 
 allProjects.push(storeProject)
 let ticTacToeProject = new project('tictactoe', 'Tic Tac Toe', 'Play with a friend :)', 'https://ruslan-rus88.github.io/TicTacToe/')
 allProjects.push(ticTacToeProject)
+let superheroComparison = new project('superheros', 'Superheros', 'Go to the page', 'https://ruslan-rus88.github.io/superheroes_comparison/')
+allProjects.push(superheroComparison)
 
 //add new projects here
 let soonRroject1 = new project('coming-soon', '', 'Visit Website', '')
@@ -224,8 +208,6 @@ let soonRroject2 = new project('coming-soon', '', 'Visit Website', '')
 allProjects.push(soonRroject2)
 let soonRroject3 = new project('coming-soon', '', 'Visit Website', '')
 allProjects.push(soonRroject3)
-let soonRroject4 = new project('coming-soon', '', 'Visit Website', '')
-allProjects.push(soonRroject4)
 //add new projects here----END
 
 let allProjectsContainer = document.querySelector('#all-projects-container')
