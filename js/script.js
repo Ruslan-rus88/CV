@@ -83,7 +83,7 @@ const measurementsTS = new Course(
 petroleumCourses.push(measurementsTS);
 
 const measurements0 = new Course(
-    'April 2018 - MAy 2018',
+    'April 2018 - May 2018',
     'Measurements-0',
     'Siberian Training Center, Tyumen, Russian Federation',
     'Measurements while drilling, Surveying, telemetry, surface System, Sensors installation and calibration.',
